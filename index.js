@@ -4,7 +4,7 @@ const generateMech = function (mecharray) {
     const newCol = document.createElement("div");
     newCol.classList.add("col", "my-3");
     newCol.innerHTML = `
-        <div class="card h-100 d-flex flex-column">
+        <div class="card h-100 d-flex flex-column ">
           <img src="${mech.imageUrl}" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-around">
             <h5 class="card-title">${mech.name}</h5>
@@ -18,7 +18,7 @@ const generateMech = function (mecharray) {
               </div>
           </div>
         </div>
-        `; //modifica sulle schede non funziona ancora
+        `; //modifica sulle schede non funziona  per il momento.
     row.appendChild(newCol);
   });
 };
