@@ -11,7 +11,7 @@ const generateMech = function (mecharray) {
             <p class="card-text flex-grow-1">${mech.description}</p>
             <p class="card-text">${mech.brand}</p>
             <div class="d-flex justify-content-between">
-              <button class="btn btn-primary">${mech.price}€</button>
+              <button class="btn btn-success">${mech.price}€</button>
               <a href="details.html?eventId=${mech._id}" class="btn btn-info">Dettagli</a>
               <a href="Backoffice.html?eventid=${mech._id}" class="btn btn-warning">Modifica </a>
                      
