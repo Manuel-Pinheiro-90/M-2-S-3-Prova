@@ -12,11 +12,13 @@ const generateMech = function (mecharray) {
             <p class="card-text">${mech.brand}</p>
             <div class="d-flex justify-content-between">
               <button class="btn btn-primary">${mech.price}€</button>
-              <a href="details.html?eventId=${mech._id}" class="btn btn-info">INFO</a>
-            </div>
+              <a href="details.html?eventId=${mech._id}" class="btn btn-info">Dettagli</a>
+              <a href="Backoffice.html?eventid=${mech._id}" class="btn btn-warning">Modifica </a>
+                     
+              </div>
           </div>
         </div>
-        `;
+        `; //modifica sulle schede non funziona ancora
     row.appendChild(newCol);
   });
 };

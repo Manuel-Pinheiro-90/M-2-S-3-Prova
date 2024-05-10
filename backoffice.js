@@ -90,7 +90,7 @@ const submitEvent = function (e) {
       if (response.ok) {
         alert(`Mech ${eventId ? "modificato" : "creato"}!`);
       } else {
-        throw new Error("Errore nel salvataggio della risorsa");
+        throw new Error("Errore  salvataggio ");
       }
     })
     .catch((err) => {

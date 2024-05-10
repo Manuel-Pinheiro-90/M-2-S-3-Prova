@@ -22,8 +22,9 @@ const getEventData = function () {
       document.getElementById("name").innerText = event.name;
       document.getElementById("description").innerText = event.description;
       document.getElementById("brand").innerText = event.brand;
+      document.getElementById("price").innerText = event.price + "-$-";
       document.getElementById("photo").setAttribute('src',event.imageUrl)=event.imageUrl;
-      document.getElementById("price").innerText = event.price + "€";
+      
     })
     .catch((err) => {
       console.log("ERRORE", err);
